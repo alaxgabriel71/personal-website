@@ -1,8 +1,9 @@
 
 .Cape_container {
+    /* position: absolute; */
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
 }
@@ -10,22 +11,112 @@
 .Title_container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     flex-direction: column;
     /* background-color: bisque; */
     background-image: linear-gradient(
         100deg,
         transparent,
-        bisque 47%
+        #e5e5e5 47%
     );
-    color: crimson;
-    width: 100vw;
-    height: 100vh;
+    color: #333333;
+    width: 100%;
+    height: 100%;
     z-index: 1;
+    padding: 2rem;
+    /* padding-bottom: 5rem; */
 }
+
+.Title_container h1 {
+    /* margin-left: 20rem; */
+    font-family: "Bungee Inline", sans-serif;
+    font-size: max(8rem, 10vw);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20%;
+    z-index: 3;
+    padding-right: 5rem;
+}
+
+.Title_container h2 {
+    /* margin-left: 25rem; */
+    font-family: "Bungee Outline", sans-serif;
+    font-size: max(6rem, 10vw);
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.7;
+}
+
+/* .Title_container h2 {
+    font-family: "Bungee Outline", sans-serif;
+    font-size: 6rem;
+    font-weight: 400;
+    font-style: normal;
+} */
 
 img {
     position: fixed;
     width: 100vw;
     z-index: 0;
+}
+
+@media (max-width: 1980px) {
+    .Title_container h1 {
+        padding-right: 13rem;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .Title_container {
+        padding: 6rem;
+    }
+
+    .Title_container h1 {
+        padding-right: 7rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Title_container h1 {
+        padding-right: 5rem;
+    }
+}
+
+/* @media (min-width: 900px) {
+    .Cape_container {
+        justify-content: center;
+    }
+    
+    .Title_container {
+        background-color: transparent;
+    }
+
+    .Title_container h1 {
+        padding-right: 8rem;
+    }
+
+    img {
+        min-width: 800px;
+    }
+} */
+
+@media (max-width: 720px) {
+
+    .Title_container {
+        padding: .5rem;
+    }
+
+    .Title_container h1 {
+        font-size: min(5rem, 50vw);
+    }
+
+    .Title_container h2 {
+        font-size: min(4rem, 50vw);
+    }
+
+    img {
+        min-width: 900px;
+        margin-left: 20rem;
+    }
 }

@@ -5,8 +5,8 @@ function Title() {
         <div className={styles.Cape_container}>
             <img src='./alax.png' alt="alax photo"/>
             <div className={styles.Title_container}>
-                <h1>Alax</h1>
-                <h2>Gabriel</h2>
+                <h1>ALAX</h1>
+                <h2>GABRIEL</h2>
             </div>
         </div>
     )
